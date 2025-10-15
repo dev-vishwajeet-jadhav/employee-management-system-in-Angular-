@@ -1,59 +1,192 @@
-# First Angular App
+# Employee Management# 🏢 Employee Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+A modern, responsive employee management application built with **Angular 20** and **TypeScript**.
 
-## Development server
+## 🌐 Live Demo
 
-To start a local development server, run:
+**[👉 Click here to view the live application](https://dev-vishwajeet-jadhav.github.io/employee-management-system-in-Angular-/)**
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-success?style=for-the-badge&logo=github)](https://dev-vishwajeet-jadhav.github.io/employee-management-system-in-Angular-/)
+
+---
+
+![Angular](https://img.shields.io/badge/Angular-20.3.5-red?logo=angular)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?logo=bootstrap)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+## ✨ Features
+
+- ✅ **Add, Edit, Delete Employees** - Full CRUD operations
+- 🔍 **Advanced Search & Filtering** - Search by name, ID, or department
+- 📊 **Department & Gender Filters** - Quick filtering options
+- 💾 **Local Storage Persistence** - Data persists across sessions
+- 🎨 **Modern UI/UX** - Beautiful gradient design with smooth animations
+- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- ⚡ **Real-time Updates** - Instant UI updates with Angular Signals
+- 🎭 **Bootstrap Icons** - Professional icon set throughout the app
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+- Angular CLI (v20 or higher)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dev-vishwajeet-jadhav/employee-management-system-in-Angular-.git
+   cd employee-management-system-in-Angular-
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   ng serve
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:4200/`
+
+## 📦 Build for Production
+
+To build the project for production:
 
 ```bash
-ng serve
+ng build --configuration production
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The build artifacts will be stored in the `dist/` directory.
 
-## Code scaffolding
+## 🌐 Deploy to GitHub Pages
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+To deploy your changes to GitHub Pages:
 
 ```bash
-ng generate component component-name
+npm run deploy
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tech Stack
+
+- **Framework:** Angular 20.3.5
+- **Language:** TypeScript 5.x
+- **State Management:** Angular Signals
+- **Styling:** Custom CSS with CSS Variables
+- **UI Framework:** Bootstrap 5.3.8
+- **Icons:** Bootstrap Icons
+- **Storage:** Browser LocalStorage API
+
+## 📂 Project Structure
+
+```
+employee-management-system/
+├── src/
+│   ├── app/
+│   │   ├── app.ts          # Main component logic
+│   │   ├── app.html        # Main component template
+│   │   └── app.css         # Component styles
+│   ├── styles.css          # Global styles
+│   └── index.html          # Main HTML file
+├── package.json
+├── angular.json
+└── README.md
+```
+
+## 🎨 UI Features
+
+- **Gradient Header** - Purple/indigo gradient with frosted glass effects
+- **Card-based Layout** - Clean employee cards with hover animations
+- **Modal Forms** - Beautiful modal dialogs for add/edit operations
+- **Responsive Grid** - Auto-adjusting grid layout for all screen sizes
+- **Smooth Animations** - Fade-in, slide-up, and transform animations
+- **Interactive Buttons** - Edit and delete buttons with hover effects
+
+## 📝 Employee Data Model
+
+```typescript
+interface Employee {
+  id: string;          // Unique employee ID
+  name: string;        // Full name
+  salary: number;      // Annual salary
+  gender: string;      // Male/Female/Other
+  department: string;  // IT/HR/Finance/Marketing/Sales
+}
+```
+
+## 🔧 Available Scripts
 
 ```bash
-ng generate --help
+# Start development server
+npm start
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+
+# Run tests
+npm test
+
+# Watch mode for development
+npm run watch
 ```
 
-## Building
+## 🎯 Key Functionalities
 
-To build the project run:
+### 1. **Add Employee**
+- Click "Add Employee" button
+- Fill in employee details (ID, Name, Salary, Gender, Department)
+- Submit to add to the list
 
-```bash
-ng build
-```
+### 2. **Edit Employee**
+- Click the edit icon on any employee card
+- Modify the details
+- Save changes
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 3. **Delete Employee**
+- Click the delete icon on any employee card
+- Confirm deletion
+- Employee removed from the list
 
-## Running unit tests
+### 4. **Search & Filter**
+- Use the search box to find employees by name, ID, or department
+- Filter by department dropdown
+- Filter by gender dropdown
+- Clear all filters with one click
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📄 License
 
-```bash
-ng test
-```
+This project is licensed under the MIT License.
 
-## Running end-to-end tests
+## 👨‍💻 Author
 
-For end-to-end (e2e) testing, run:
+**Vishwajeet Namdev Jadhav**
 
-```bash
-ng e2e
-```
+- GitHub: [@dev-vishwajeet-jadhav](https://github.com/dev-vishwajeet-jadhav)
+- Repository: [employee-management-system-in-Angular-](https://github.com/dev-vishwajeet-jadhav/employee-management-system-in-Angular-)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🤝 Contributing
 
-## Additional Resources
+Contributions, issues, and feature requests are welcome!
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feel free to check the [issues page](https://github.com/dev-vishwajeet-jadhav/employee-management-system-in-Angular-/issues).
+
+## ⭐ Show your support
+
+Give a ⭐️ if you like this project!
+
+---
+
+**Built with ❤️ using Angular**
