@@ -18,7 +18,7 @@ interface Employee {
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('firstapp');
+  protected readonly title = signal('Employee Management System');
   
   // Employee data
   employees = signal<Employee[]>([]);
