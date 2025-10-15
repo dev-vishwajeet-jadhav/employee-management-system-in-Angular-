@@ -1,6 +1,21 @@
 {
-  "name": "firstapp",
-  "version": "0.0.0",
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "A modern employee management system built with Angular 20 and Bootstrap 5, featuring CRUD operations and local storage persistence",
+  "author": "Vishwajeet Namdev Jadhav",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-vishwajeet-jadhav/employee-management-system.git"
+  },
+  "keywords": [
+    "angular",
+    "employee-management",
+    "crud",
+    "bootstrap",
+    "typescript",
+    "local-storage"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,7 +35,7 @@
       }
     ]
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
@@ -28,6 +43,7 @@
     "@angular/forms": "^20.3.0",
     "@angular/platform-browser": "^20.3.0",
     "@angular/router": "^20.3.0",
+    "bootstrap": "^5.3.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
